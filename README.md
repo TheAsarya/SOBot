@@ -83,23 +83,15 @@ _with assistance from ChatGPT and Claude AI_
 | Command | Description |
 |--------|-------------|
 | `!addsbso [username] [custom_shoutout - optional]` | Add a user to the list; optionally add a custom shoutout |
-| `!editsbso [username] [custom_shoutout]` | adds a custom shoutout to a user if they're already in the shoutout list. 
-      Use with caution. this will overwrite any existing custom shoutout |
+| `!editsbso [username] [custom_shoutout]` | adds a custom shoutout to a user if they're already in the shoutout list. Use with caution. this will overwrite any existing custom shoutout |
 | `!hellosb` | Say hello to the bot so you can check if it's running |
-| `!sbso [username]` | manual shoutout to a user if they're in the shoutout list. 
-      will use custom shoutout if available. otherwise will use default message |
-| `!removesbso [username]` | intended mainly for if a user is added with a typo in their name etc.
-      use with caution |
-| `!resetsbshouted` | resets the already shouted list which tracks who on the list 
-      has already had an automated shoutout this stream (since the 
-      bot was restarted or this command was last used) |
+| `!sbso [username]` | manual shoutout to a user if they're in the shoutout list. will use custom shoutout if available. otherwise will use default message |
+| `!removesbso [username]` | intended mainly for if a user is added with a typo in their name etc. use with caution |
+| `!resetsbshouted` | resets the already shouted list which tracks who on the list has already had an automated shoutout this stream (since the bot was restarted or this command was last used) |
 | `!sbcommands` | Lists available SOBot commands in chat |
-| `!startsbsw [optional_offset_minutes]` | starts a stopwatch. optional offest lets you start the timer from 
-      e.g. two minutes ago by doing "!startsbtimer 2" |
-| `!sbsw` | report the current duration of the stopwatch in chat, if the stopwatch
-      is active |
-| `!stopsbsw` | stops the stopwatch, if there's one active, and reports the total
-      duration in chat |
+| `!startsbsw [optional_offset_minutes]` | starts a stopwatch. optional offest lets you start the timer from e.g. two minutes ago by doing "!startsbtimer 2" |
+| `!sbsw` | report the current duration of the stopwatch in chat, if the stopwatch is active |
+| `!stopsbsw` | stops the stopwatch, if there's one active, and reports the total duration in chat |
 
 ➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️
 
@@ -116,7 +108,7 @@ _with assistance from ChatGPT and Claude AI_
   - Maintain the JSON formatting
   - Useful for batch editing
 
-- Probably a good idea to backup your `{Username}_sODatabase.json` occasionally.
+- Probably a good idea to backup your `{username}_sODatabase.json` occasionally.
 
 - Add your own commands between the following comment lines in `SOBot.py`. They may fail to register if further down:
   ```python
