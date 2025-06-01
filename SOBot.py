@@ -26,8 +26,8 @@ import time
 class SOBotState:
     def __init__(self):
         #track who's already been shouted out this stream
-        self.channelname = "sharkbite1456" #Enter your twitch channel username between the quotation marks in lowercase
-        self.defaultSO = "Please welcome @{username} to the 🦈🦷 channel and give them a follow at http://www.twitch.tv/{username} for some excellent {game} gaming."
+        self.channelname = "theasarya" #Enter your twitch channel username between the quotation marks in lowercase
+        self.defaultSO = "Please welcome @{username} to the channel and give them a follow at http://www.twitch.tv/{username} for some excellent {game} gaming."
         self.defaultGame = ""
         self.already_shouted = set()
         self.stream_start_time = datetime.datetime.now()

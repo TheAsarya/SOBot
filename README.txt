@@ -15,8 +15,7 @@
 
     Installation instructions Windows
     
-    1. Install python from python.org i used v3.13.3 otherwise I'd recommend
-        the latest stable release
+    1. Install python from python.org i've used v3.13.3 and v3.12.2
     2. add python to path and env in your Windows environment if doesn't do it
         automatically. you can check by entering "python --version" in a 
         terminal window (run cmd when from windows search) 
@@ -27,15 +26,15 @@
     4. get SOBot project files and put them in a folder on your PC
     5. edit the following in the project files 
         a) choose the twitch account SOBot will use (an account that is 
-            not the one you're streaming from is preferable) and get an access 
-            token for it from https://twitchtokengenerator.com/ if you don't 
-            have one. Then in the file .env replace the placeholder with your 
-            bot's access token. 
+            not the one you're streaming from is preferable) and get a bot 
+            access token for it from https://twitchtokengenerator.com/ if you 
+            don't have one. Then in the file .env.example replace the 
+            placeholder with your bot's access token. Then rename the file to 
+            .env
             
             N.B. Don't share your access tokens with anyone
             
-        b) In SOBotx_y.py (replacing x and y with the appropriate version 
-            numbers where appropriate), find the line 
+        b) In SOBot.py, find the line 
             "self.channelname = "theasarya" and replace whatever is between the
             inner quotation marks with your twitch channel username in lower 
             case 
@@ -43,16 +42,17 @@
             in the customisation section below
     5. open a terminal window (go to the windows search box and type cmd)
     6. Navigate to your SOBot folder in your terminal window then enter 
-        "python sobotx_y.py" to run the bot
+        "python sobot.py" to run the bot
     7. Make the bot a mod in your channel
     8. try a command like !hellosb in chat to check if it's responding properly
         Click into the terminal window and hit ctrl+c to stop the bot
-    9. Once your confident it's working you can edit the bat file. open the bat
-         file for editing and replace the path to sobotx_y.py with the path
+    9. Once you're confident it's working you can edit the bat file. 
+         Put the bat file somewhere convenient like your desktop. Open the bat
+         file for editing and replace the path to SOBot.py with the path
          to whichever version of sobot you're using
     10. double click the bat file to run the bot
     11. Once you're confident that the bot is running correctly you can set
-         the line self.debug = False in SOBotx_y.py to have less information 
+         the line self.debug = False in SOBot.py to have less information 
          printing to the terminal window when the bot's running
     
         
@@ -143,3 +143,11 @@
                 
                 
             #add additional commands before this line
+            
+=><==><==><==><==><==><==><==><==><==><==><==><==><==><==><==><=
+
+    Changelog
+    
+    v0_5 fixed bug when running from remote batch. new version always looks in 
+        sobotx_y.py folder for appropriate .json file
+    v0_4 test release            
