@@ -1,0 +1,11 @@
+name: SOBot
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.12
+  - python-dotenv
+  - pip
+  - pip:
+    - twitchio
