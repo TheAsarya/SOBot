@@ -447,7 +447,7 @@ class SOBot(commands.Bot):
         filename = f"{self.state.channelname}_sODatabase.json"
         script_dir = os.path.dirname(os.path.abspath(__file__))
         full_path = os.path.join(script_dir, filename)
-        print(f"full_path")
+        print(f"{full_path}")
         
         try:
             with open(full_path, 'r', encoding="utf-8") as file:
@@ -465,7 +465,7 @@ class SOBot(commands.Bot):
         filename = f"{self.state.channelname}_sODatabase.json"
         script_dir = os.path.dirname(os.path.abspath(__file__))
         full_path = os.path.join(script_dir, filename)
-        print(f"full_path")
+        print(f"{full_path}")
         
         with open(full_path, 'w', encoding="utf-8") as file:
             json.dump(self.state.sOList, file, indent=4)   
