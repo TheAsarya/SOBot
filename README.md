@@ -76,6 +76,15 @@ _with assistance from ChatGPT and Claude AI_
     ```
     in `SOBot.py` to reduce terminal spam.
 
+12. If you're using conda you can use the SOBot.yml to create a conda environment for sobot via
+      ```shell
+      conda env create --file=SOBot.yml
+      ```
+      then
+      ```shell
+      conda activate SOBot
+      ```
+
 ➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️➡️⬅️
 
 ## 🛠️ Commands
